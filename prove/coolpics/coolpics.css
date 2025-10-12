@@ -46,6 +46,7 @@ nav.open a { display: block; text-align: center; }
   justify-items: center;
   gap: 1rem;
 }
+
 .gallery img {
   width: 250px;
   height: 250px;
