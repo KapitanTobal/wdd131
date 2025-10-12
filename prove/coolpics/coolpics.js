@@ -3,31 +3,31 @@ const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
 const closeButton = modal.querySelector('.close-viewer');
 
-// Event listener for opening the modal
+// open modal only when an <img> is clicked
 gallery.addEventListener('click', openModal);
 
 function openModal(e) {
-    console.log(e.target);
-    const img = e.target;
+  const img = e.target;
+  if (img.tagName !== 'IMG') return;
 
-    const src = img.getAttribute('src');
-    const alt = img.getAttribute('alt');
-    const full = src.replace('sm', 'full');
+  const src = img.getAttribute('src');
+  const alt = img.getAttribute('alt');
+  const full = src.replace('-sm', '-full');
 
-    modalImage.src = full;
-    modalImage.alt = alt;
+  modalImage.src = full;
+  modalImage.alt = alt;
 
-    modal.showModal();
-    
+  modal.showModal();
 }
+
 // Close modal on button click
 closeButton.addEventListener('click', () => {
-    modal.close();
+  modal.close();
 });
 
 // Close modal if clicking outside the image
 modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.close();
-    }
+  if (event.target === modal) {
+    modal.close();
+  }
 });

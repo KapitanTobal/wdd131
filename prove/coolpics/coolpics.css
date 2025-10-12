@@ -1,113 +1,120 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-body {
-  font-family: Roboto, sans-serif;
+header, footer, main {
+  margin: 0;
 }
 
-header,
-footer {
-
-    margin: 1rem auto;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: rgb(42, 149, 185);
+header, footer {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: rgb(42, 149, 185);
+  color: #000;
 }
 
 main {
-
-    margin: 1rem auto;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: rgb(183, 193, 197);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: rgb(183, 193, 197);
 }
 
-header, main, footer {
-    margin: 0;
-}
+h1, .currentwork, footer { text-align: center; }
 
-section {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.menu-btn {
-    display: block;
-    margin: 0 auto;
-}
-
-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 4px solid #ccc;
-    display: block;
-    margin: 20px auto;
-    box-shadow: 4px 4px 4px #313131;
-}
-
-h1 {
-    text-align: center;
-}
-
-.currentwork {
-    text-align: center;
-}
-
+/* NAV */
 nav a {
-    padding: 20px;
-    color: black;
-    display: none;
-    text-decoration: none;
+  padding: 12px 16px;
+  color: black;
+  text-decoration: none;
+  display: none;              /* hidden by default on mobile */
 }
-
-nav a:hover {
-    text-decoration: none;
-    color: #616061;
-}
-
+nav a:hover { color: #616061; }
 .menu-btn {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+  display: block;
+  margin: 0.5rem auto 0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 4px;
-    background-color: black;
-    margin: 5px 0;
+/* When nav is opened via JS on mobile */
+nav.open a { display: block; text-align: center; }
+
+/* GALLERY */
+.gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+}
+.gallery img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid #ccc;
+  box-shadow: 4px 4px 4px #313131;
+  display: block;
+  margin: 0 auto;
 }
 
-footer {
+/* MODAL */
+dialog {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.75);
+}
+
+dialog img {
+  width: 90%;
+  display: block;
+  margin: 20vh auto 0;
+}
+.close-viewer {
+  position: fixed;
+  top: 10vh;
+  right: 2vh;
+  padding: 4px 10px;
+  font-size: 1.5rem;
+  line-height: 1;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (min-width: 700px) {
+  nav { 
     text-align: center;
 }
-
-
-@media screen and (min-width: 820px) {
-    
-    nav{
-        text-align: center;
-    }
-    nav a {
-        display: inline-block;
-    }
-    .menu-btn {
-        display: none;
-    }
-    section {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    
+  nav a { 
+    display: inline-block;
 }
- 
-@media screen and (min-width: 1300px) {
-    section {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    nav{
-        text-align: center;
-    }
-    nav a {
-        display: inline-block;
-    }
+  .menu-btn { 
+    display: none; 
+}
+  .gallery { 
+    grid-template-columns: repeat(2, 1fr); 
+}
+}
+
+@media (min-width: 1000px) {
+  .gallery { 
+    grid-template-columns: repeat(3, 1fr); 
+}
+  dialog img {
+    width: 60%;
+    margin: 15vh auto;
+}
+.close-viewer {
+    position: absolute;
+    right: 15vh;
+}
+.viewer {
+    margin: 50px;
+    padding: 50px;
+}
+.viewer img {
+    max-width: 800px;
+}
 }
