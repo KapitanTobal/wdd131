@@ -31,3 +31,11 @@ modal.addEventListener('click', (event) => {
     modal.close();
   }
 });
+
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('header nav') || document.querySelector('nav');
+
+menuBtn.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+

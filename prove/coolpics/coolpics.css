@@ -23,6 +23,7 @@ nav a {
   text-decoration: none;
   display: none;              /* hidden by default on mobile */
 }
+
 nav a:hover { color: #616061; }
 .menu-btn {
   display: block;
