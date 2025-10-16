@@ -52,6 +52,14 @@ h2 {
     display: none;
 }
 
+footer {
+    margin-top: 20px;
+    display: block;
+    border-top: 2px solid #EFC69B;
+    text-align: center;
+    padding: 20px;
+}
+
 @media screen and (min-width: 680px) {
     #blog-articles .book{
         display: grid;
@@ -73,5 +81,12 @@ h2 {
     }
     article {
         padding-left: 180px;
+    }
+    footer {
+        margin-top: 20px;
+        display: block;
+        border-top: 2px solid #EFC69B;
+        text-align: center;
+        padding: 20px;
     }
 }
