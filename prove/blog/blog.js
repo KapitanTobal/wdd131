@@ -1,5 +1,3 @@
-
-
 const articles = [
 	{
 		id: 1,
@@ -45,7 +43,6 @@ let blogArticles = document.querySelector('#blog-articles');
 
 articles.forEach(article => {
 
-
 let html = `<article class="book">
             <div class="details">
                 <em><p>${article.date}</p></em>
@@ -60,7 +57,7 @@ let html = `<article class="book">
         </article>
         </article>
         </div>`;
-	
+			
 	blogArticles.innerHTML +=html;
 
 });
