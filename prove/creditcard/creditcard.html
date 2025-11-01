@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="icon" href="creditcard.ico">
+    <link rel="stylesheet" href="creditcard.css"/>
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+
+    <h1> CREDIT CARD PAYMENT</h1>
+
+    <main class="page">
+        
+        <form class="card" id="creditCardForm" action="#">
+            <div class="total">TOTAL: $199</div>
+            
+            <!-- little card icon -->
+            <span class="card-emoji" aria-hidden="true">💳</span>
+            
+            <!-- CARD NUMBER -->
+            <div class="cardNum">
+                <label for="creditCardNumber" class="field-label">CARD NUMBER</label>
+                <input
+                type="text"
+                id="creditCardNumber"
+                name="creditCardNumber"
+                inputmode="numeric"
+                placeholder="1234 5678 9101 1020"
+                required
+                />
+            </div>
+            
+            <!-- CARD HOLDER -->
+            <div class="cardHolderBox">
+                <label for="cardHolder" class="field-label">CARD HOLDER</label>
+                <input
+                type="text"
+                id="cardHolder"
+                name="cardHolder"
+                placeholder="John Doe"
+                required
+                />
+            </div>
+            
+          <!-- EXPIRATION (bottom-right) -->
+            <div class="exp">
+                <label for="expirationDate">EXPIRATION</label>
+                <input
+                type="text"
+                id="month"
+                name="expMonth"
+                placeholder="MM"
+                aria-labelledby="expirationDate"
+                maxlength="2"
+                inputmode="numeric"
+                required
+                />
+                <input
+                type="text"
+                id="year"
+                name="expYear"
+                placeholder="YY"
+                aria-labelledby="expirationDate"
+                maxlength="2"
+                inputmode="numeric"
+                required
+                />
+          </div>
+
+        </form>
+        
+        <form class="cardback">
+            <div class="mag-strip"></div>
+                <label for="cvv" class="cvc">CVC/CVV</label>
+                <input 
+                type="text" 
+                id="cvv" 
+                placeholder="XXX"
+                inputmode="numeric"
+                required
+                />
+        </form>
+
+        <button class="submit" form="creditCardForm" type="submit">Submit</button>
+
+      </main>
+</body>
+</html>
