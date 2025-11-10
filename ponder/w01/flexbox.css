@@ -50,4 +50,11 @@
         flex-direction: row;
     }
     
+    .media-card-image {
+        flex: 0 1 250px;
+    }
+
+    .media-card-content {
+        flex: 0 1 60ch;
+    }
 }
