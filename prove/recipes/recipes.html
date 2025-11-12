@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <meta name="description" content="Discover simple and delicious recipes like Apple Crisp — warm, cozy, and topped with vanilla ice cream. Explore more dessert ideas at RecipeBook!">
+    <link rel="stylesheet" href="recipes.css" />
+    
+        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RecipeBook | Apple Crisp Recipe">
+    <meta property="og:description" content="Try this warm and cozy Apple Crisp recipe made with fresh apples, oats, and cinnamon — perfect for any occasion!">
+    <meta property="og:url" content="https://kapitantobal.github.io/wdd131/prove/recipes/recipes.html">
+    <meta property="og:image" content="https://kapitantobal.github.io/wdd131/prove/recipes/images/apple-crisp.jpg">
+
+    <!-- X (Twitter) Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RecipeBook | Apple Crisp Recipe">
+    <meta name="twitter:description" content="Try this warm and cozy Apple Crisp recipe made with fresh apples, oats, and cinnamon — perfect for any occasion!">
+    <meta name="twitter:image" content="https://kapitantobal.github.io/wdd131/prove/recipes/images/apple-crisp.jpg">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="branding">
+          <img src="images/recipe-book.png" alt="RecipeBook logo" class="logo">
+          <h1 class="site-title">RecipeBook</h1>
+        </div>
+    </header>
+    
+    <div class="searchbar">
+        <input type="search" placeholder="Find a recipe" aria-label="Find a recipe">
+        <button aria-label="Search">
+          <img src="images/search.svg" alt="" aria-hidden="true">
+        </button>
+    </div>
+    <hr>
+    <main id="recipe-list">
+        <article class="recipe-card">
+          <img src="images/apple-crisp.jpg" alt="Apple crisp topped with vanilla ice cream">
+    
+          <div class="recipe-info">
+            <span class="tag">dessert</span>
+    
+            <h2><a class="recipe-link" href="#">Apple Crisp</a></h2>
+    
+            <!-- Accessible rating -->
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+              <span aria-hidden="true">⭐</span>
+              <span aria-hidden="true">⭐</span>
+              <span aria-hidden="true">⭐</span>
+              <span aria-hidden="true">⭐</span>
+              <span aria-hidden="true">☆</span>
+            </span>
+    
+            <p id="desc" class="recipe-description">
+              This apple crisp recipe is a simple yet delicious fall dessert that’s great served warm with vanilla ice cream.
+            </p>
+          </div>
+        </article>
+      </main>
+
+    <footer>
+        
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                   
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+
+.branding img{
+    height: 100px
+}
+
+.branding {
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
+    gap: 12px;
+}                  
+
+.searchbar {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    gap: 8px;                   
+    margin: 20px auto;           
+}
+
+.searchbar input {
+    width: 400px;                
+    padding: 0.6rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.searchbar button {
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar button img {
+    width: 22px;
+    height: 22px;
+}
+
+main {   
+    max-width: 480px;
+    margin: 0 auto;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.tag {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+}
+
+.recipe-link {
+    text-decoration: none;
+
+}
+
+.searchbar {
+    height: 30px;
+}
+
+.searchbar img {
+    width: 30px;
+}
+
+.recipe-description {
+    display: none;
+}
+
+.social img {
+    width: 24px;  
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+    /* show description when wider than 600px */
+    .recipe-description { 
+        display: block; 
+    }
+    
+    hr {
+        width: 60%;           
+        margin: 1rem auto;    
+        border: 1px solid #ccc;
+      }
+    /* switch recipe card to 2-column grid */
+    .recipe-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+    .recipe-card img {
+      grid-row: 1 / 6;
+      grid-column: 1 / 2;
+    }
+  
+    /* main stays centered, but can be a bit wider */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  
+    /* social row spacing a bit bigger on larger screens */
+    .social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse
+    }
+
+    .searchbar input {
+        width: 880px; 
+    }
+
+  }
