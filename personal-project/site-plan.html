@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Coding Projects – Site Plan</title>
+  <link rel="stylesheet" href="styles/site-plan.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Coding Projects – Site Plan</h1>
+    <h2>Aristotle Cristobal</h2>
+  </header>
+
+  <main>
+
+    <!-- PURPOSE -->
+    <section>
+      <h2>Purpose</h2>
+      <p>
+        The purpose of this site is to provide a simple login-based experience that leads 
+        users to a complete archive of all my coding projects from WDD 131. The site 
+        functions both as a personal web application and as a portfolio that showcases my 
+        progress in HTML, CSS, and JavaScript through Prove and Ponder assignments.
+      </p>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section>
+      <h2>Audience</h2>
+      <p>
+        This site is intended for my instructor, classmates, and future employers who may 
+        want to review my coding work. It is also designed for visitors who want to explore 
+        what I’ve learned throughout the semester. The layout is simple, readable, and 
+        mobile-friendly to accommodate all types of viewers.
+      </p>
+    </section>
+
+    <!-- DYNAMIC ELEMENTS -->
+    <section>
+      <h2>Description of Dynamic Elements</h2>
+      <p>
+        JavaScript will be used extensively on both the login page and the projects page. 
+        On the <strong>login page</strong>, I will implement basic validation using event 
+        listeners and conditional statements. If the entered username and password match a 
+        simple condition, the user will be redirected to the child page. If not, an error 
+        message will appear through DOM manipulation.
+      </p>
+
+      <p>
+        On the <strong>My Coding Projects</strong> page, all project data will be stored 
+        in an array of objects inside an ES module. Each project object will include 
+        properties such as title, type (Prove or Ponder), category (HTML, CSS, JS), 
+        description, image, and links. Using JavaScript:
+      </p>
+
+      <ul>
+        <li><code>forEach()</code> will dynamically generate project cards.</li>
+        <li><code>filter()</code> will allow users to sort assignments by category or type.</li>
+        <li><code>reduce()</code> may be used to calculate total projects and statistics.</li>
+        <li>Conditional logic will show a message if no projects match a filter.</li>
+        <li>DOM manipulation will update the page based on user interactions.</li>
+        <li>All data will be imported through an ES module.</li>
+      </ul>
+
+      <p>
+        These dynamic features will satisfy the requirements for DOM interaction, events, 
+        conditionals, objects, arrays, array methods, and ES modules.
+      </p>
+    </section>
+
+    <!-- LOGO -->
+    <section>
+      <h2>Logo</h2>
+      <p>
+        The logo will be a simple, modern design using my initials “AC” in a rounded 
+        rectangle or circle. The logo will be grayscale to match the minimalist color 
+        palette. It will appear on both the login page and the projects page.
+      </p>
+      <img src="images/logo-placeholder.png" alt="Logo Placeholder" style="width: 180px;">
+    </section>
+
+    <!-- COLORS -->
+    <section>
+      <h2>Colors</h2>
+      <p>The site will use a clean grayscale palette for a minimal and professional look.</p>
+
+      <ul>
+        <li><strong>Primary Background:</strong> #FFFFFF (white)</li>
+        <li><strong>Secondary Background:</strong> #F3F4F6 (light gray)</li>
+        <li><strong>Card Background:</strong> #FFFFFF (white)</li>
+        <li><strong>Border Color:</strong> #D1D5DB (soft gray)</li>
+        <li><strong>Primary Text:</strong> #111827 (dark gray)</li>
+        <li><strong>Secondary Text:</strong> #4B5563 (neutral gray)</li>
+        <li><strong>Accent Gray (optional):</strong> #6B7280</li>
+        <li><strong>Button Background:</strong> #E5E7EB (light gray)</li>
+      </ul>
+    </section>
+
+    <!-- FONTS -->
+    <section>
+      <h2>Fonts</h2>
+      <p>
+        The site will use clean, readable fonts from Google Fonts:
+      </p>
+      <ul>
+        <li><strong>Headings:</strong> Poppins, sans-serif</li>
+        <li><strong>Body Text:</strong> Inter, system-ui, sans-serif</li>
+      </ul>
+      <p>
+        These fonts maintain a minimal aesthetic and improve readability on all devices.
+      </p>
+    </section>
+
+    <!-- CONTENT -->
+    <section>
+      <h2>Content</h2>
+
+      <h3>Home Page – Login</h3>
+      <p><strong>Title:</strong> Welcome to My Coding Projects</p>
+      <p>
+        The home page will contain a centered login card with input fields for username 
+        and password, a login button, and an optional “Continue as Guest” link. A brief 
+        welcome message will explain the purpose of the site and direct users to log in 
+        to access the project archive.
+      </p>
+
+      <h3>Child Page – My Coding Projects</h3>
+      <p><strong>Title:</strong> My Coding Projects</p>
+      <p>
+        This page will display all Prove and Ponder assignments from WDD 131. Project 
+        cards will include:
+      </p>
+
+      <ul>
+        <li>Project title</li>
+        <li>Type: Prove or Ponder</li>
+        <li>Category: HTML, CSS, or JavaScript</li>
+        <li>Short description</li>
+        <li>Thumbnail image (optional)</li>
+        <li>“View Project” and “View Code” buttons</li>
+      </ul>
+
+      <p>
+        A page-purpose paragraph at the top will describe what this page includes and 
+        what I accomplished during the semester.
+      </p>
+    </section>
+
+    <!-- WIREFRAMES -->
+    <section>
+      <h2>Wireframes</h2>
+
+      <h3>Home Page – Login Wireframe</h3>
+      <p>The home page has a large title and a centered login card.</p>
+      <img src="images/login-wireframe.png" alt="Login Page Wireframe">
+
+      <h3>Child Page – My Coding Projects Wireframe</h3>
+      <p>The projects page contains a purpose paragraph and organized grids of project cards.</p>
+      <img src="images/projects-wireframe.png" alt="Projects Page Wireframe">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aristotle Cristobal</p>
+  </footer>
+</body>
+</html>
