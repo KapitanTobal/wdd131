@@ -281,12 +281,12 @@ const recipes = [
   }
 ];
 
-// 🔹 DOM references (similar to hikes.js)
+
 const recipeContainer = document.querySelector("#recipe-list");
 const searchInput = document.querySelector("#recipe-search");
 const searchButton = document.querySelector(".searchbar button");
 
-// 🔹 Event listeners
+
 searchButton.addEventListener("click", search);
 searchInput.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
@@ -294,7 +294,7 @@ searchInput.addEventListener("keyup", (event) => {
   }
 });
 
-// 🔹 Search function (name, description, tags, ingredients)
+
 function search() {
   const query = searchInput.value.trim().toLowerCase();
 
@@ -322,23 +322,23 @@ function search() {
   sortedRecipes.forEach((recipe) => renderRecipe(recipe));
 }
 
-// 🔹 Sort by rating (highest first)
+
 function compareRecipes(a, b) {
   if (a.rating > b.rating) return -1;
   if (a.rating < b.rating) return 1;
   return 0;
 }
 
-// 🔹 Tag template (like hikes tagTemplate)
+
 function tagTemplate(tags) {
   return tags
     .map((tag) => `<button class="tag-button" type="button">${tag}</button>`)
     .join("");
 }
 
-// 🔹 Rating template (like difficultyTemplate → stars)
+
 function ratingTemplate(rating) {
-  const rounded = Math.round(rating); // handle 4.5 nicely
+  const rounded = Math.round(rating);
   let html = `<span class="rating" role="img" aria-label="Rating: ${rating} out of 5 stars">`;
   for (let i = 1; i <= 5; i++) {
     if (i <= rounded) {
