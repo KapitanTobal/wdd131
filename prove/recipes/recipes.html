@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <meta name="description" content="Discover simple and delicious recipes like Apple Crisp — warm, cozy, and topped with vanilla ice cream. Explore more dessert ideas at RecipeBook!">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="recipes.css" />
+    <script src="recipes.js" defer></script>
+
     
         <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
@@ -40,35 +43,14 @@
     </header>
     
     <div class="searchbar">
-        <input type="search" placeholder="Find a recipe" aria-label="Find a recipe">
+        <input id="recipe-search" type="search" placeholder="Find a recipe" aria-label="Find a recipe">
         <button aria-label="Search">
           <img src="images/search.svg" alt="" aria-hidden="true">
         </button>
     </div>
     <hr>
     <main id="recipe-list">
-        <article class="recipe-card">
-          <img src="images/apple-crisp.jpg" alt="Apple crisp topped with vanilla ice cream">
-    
-          <div class="recipe-info">
-            <span class="tag">dessert</span>
-    
-            <h2><a class="recipe-link" href="#">Apple Crisp</a></h2>
-    
-            <!-- Accessible rating -->
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-              <span aria-hidden="true">⭐</span>
-              <span aria-hidden="true">⭐</span>
-              <span aria-hidden="true">⭐</span>
-              <span aria-hidden="true">⭐</span>
-              <span aria-hidden="true">☆</span>
-            </span>
-    
-            <p id="desc" class="recipe-description">
-              This apple crisp recipe is a simple yet delicious fall dessert that’s great served warm with vanilla ice cream.
-            </p>
-          </div>
-        </article>
+        
       </main>
 
     <footer>

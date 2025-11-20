@@ -46,9 +46,10 @@
 main {   
     max-width: 480px;
     margin: 0 auto;
-    border: solid 2px black;
-    border-radius: 5px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 main img {
@@ -68,6 +69,13 @@ main img {
 .recipe-link {
     text-decoration: none;
 
+}
+
+.recipe-card {
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fff;
 }
 
 .searchbar {
@@ -118,6 +126,7 @@ footer a {
       gap: 10px;
       align-items: start;
     }
+
     .recipe-card img {
       grid-row: 1 / 6;
       grid-column: 1 / 2;
