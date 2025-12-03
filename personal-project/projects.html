@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Coding Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/projects.css" />
+  <script defer src="js/projects.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    
+    <header class="top-header">
+        <h2>My Coding Projects</h2>
+        <button id="signOutBtn" class="signout-btn">Sign Out</button>
+      </header>
+      
+
+    <main>
+      <h1 class="page-title">MY CODING PROJECTS</h1>
+
+      <section class="page-purpose">
+        <h2>Page Purpose</h2>
+        <p>
+          This page is a complete collection of all the coding assignments I created
+          throughout the semester, including both Prove and Ponder activities. Each
+          project demonstrates a different web development concept such as HTML
+          structure, CSS styling, JavaScript DOM manipulation, events, arrays, and
+          dynamic rendering.
+        </p>
+      </section>
+
+      <div class="search-bar">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search projects..."
+        />
+      </div>
+      
+      <section class="projects-group">
+        <h2 class="group-title">PONDER</h2>
+        <div id="ponder-container" class="projects-grid"></div>
+      </section>
+
+      <section class="projects-group">
+        <h2 class="group-title">PROVE</h2>
+        <div id="prove-container" class="projects-grid"></div>
+      </section>
+    </main>
+
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-content">
+          <button id="close-modal" class="close-btn">X</button>
+
+          <div id="live-view">
+            <iframe id="project-frame" src=""></iframe>
+          </div>
+
+          <div id="code-view" class="hidden">
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="html">HTML</button>
+              <button class="tab-btn" data-tab="css">CSS</button>
+              <button class="tab-btn" data-tab="js">JavaScript</button>
+            </div>
+
+            <pre id="html-panel"><code id="html-code"></code></pre>
+            <pre id="css-panel" class="hidden"><code id="css-code"></code></pre>
+            <pre id="js-panel" class="hidden"><code id="js-code"></code></pre>
+          </div>
+        </div>
+      </div>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Aristotle Cristobal</p>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    color: #333;
+  }
+  
+  /* ===== LAYOUT WRAPPER ===== */
+  .page-wrapper {
+    min-height: 100vh;         
+    display: flex;
+    flex-direction: column;    
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* ===== HEADER (TOP BAR) ===== */
+  .top-header {
+    width: 100%;
+    background-color: #d9d9d9;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .top-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* ===== PAGE TITLE ===== */
+  .page-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+  
+  /* ===== LOGIN CARD ===== */
+  .login-card {
+    background: white;
+    max-width: 350px;
+    height: 500px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+  
+  .login-title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+  }
+  
+  /* ===== FORM ===== */
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  /* ===== BUTTONS ===== */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .btn-primary {
+    background: #dcdcdc;
+  }
+  
+  .btn-ghost {
+    background: #eee;
+  }
+  
+  /* ===== SIGNUP TEXT ===== */
+  .signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  
+  .signup-text a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  /* ===== FOOTER (BOTTOM BAR) ===== */
+  .site-footer {
+    background-color: #d9d9d9;   
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+  }
+  
