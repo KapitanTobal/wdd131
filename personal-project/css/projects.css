@@ -25,33 +25,46 @@
     flex: 1;
   }
   
-  .top-header {
-    width: 100%;
-    background-color: #d9d9d9;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .top-header h2 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .signout-btn {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    padding: 6px 12px;
-    background-color: #bfbfbf;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 13px;
-  }
-  
-  .signout-btn:hover {
-    background-color: #a5a5a5;
-  }
+
+.top-header {
+  display: flex;               
+  align-items: center;         
+  justify-content: center;     
+  gap: 15px;                   
+  background-color: #d9d9d9;
+  padding: 20px;
+  position: relative;
+}
+
+
+.header-logo {
+  width: 50px;
+  height: auto;
+}
+
+
+.top-header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.signout-btn {
+  position: absolute; 
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 6px 12px;
+  background-color: #bfbfbf;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.signout-btn:hover {
+  background-color: #a5a5a5;
+}
+
   
   .page-title {
     text-align: center;
